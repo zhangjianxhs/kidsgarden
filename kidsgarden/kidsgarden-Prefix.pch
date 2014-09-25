@@ -14,3 +14,9 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+
+#import "KidsDefine.h"
+#import <CoreData/CoreData.h>
+#import "KidsAppDelegate.h"
+#import "KidsOpenUDID.h"

@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="application/vnd.wap.xhtml+xml;charset=utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+            <meta name="apple-mobile-web-app-capable" content="yes">
+                <meta name="apple-mobile-web-app-status-bar-style" content="black">
+                    <meta name="format-detection" content="telephone=no">
+                        <script>
+                            window.onload = function(){
+                                myTitle = document.getElementById("title");
+                                document.addEventListener('WebViewJavascriptBridgeReady', onBridgeReady, false)
+                                
+                            }
+                        function onBridgeReady(event) {
+                            bridge = event.bridge
+                            bridge.init(function(message) {
+                                log('JS got a message', message)
+                                        });
+                            bridge.registerHandler("appendAd", function(data) { appendAd(data) });
+                            initialize();
+                        }
+                        function initialize(){
+                            getTitle();
+                            getSource();
+                            getTime();
+                            getBody();
+                        }
+                        function getTitle(){
+                            myTitle = document.getElementById("title");
+                            if (bridge) {
+                                bridge.callHandler('getTitleCallback','title', function(title) {
+                                                   myTitle.innerHTML=title;
+                                                   });
+                            }
+                        }
+                        
+                        
+                        function getSource(){
+                            var mySource = document.getElementById('source');
+                            if (bridge) {
+                                bridge.callHandler('getSourceCallback', 'source', function(source) {
+                                                   mySource.innerHTML=source;
+                                                   });
+                            }
+                        }
+                        
+                        function getTime(){
+                            var myTime = document.getElementById('time');
+                            if (bridge) {
+                                bridge.callHandler('getPubTimeCallback', 'time', function(time) {
+                                                   myTime.innerHTML=time;
+                                                   });
+                            }
+                        }
+                        function getBody(){
+                            myBody = document.getElementById('article_body');
+                            if (bridge) {
+                                bridge.callHandler('getContentCallback', 'body', function(content) {
+                                                   myBody.innerHTML=content;
+                                                   });
+                            }
+                        }
+                        function appendAd(imageUrl){
+                            var img=document.createElement('img');
+                            img.setAttribute("src", imageUrl);
+                            img.setAttribute("class","imgad");
+                            img.onclick=function(){
+                                if (bridge) {
+                                    bridge.callHandler('openAd', '', null);
+                                    
+                                }
+                            };
+                            document.body.appendChild(img);
+                            
+                        }
+                        
+                        </script>
+                        <style type="text/css">
+                            .title {
+                                color:#000;
+                                font-size:1.2em;
+                                text-align:left;
+                                margin: 5px 2% 3px 2%;
+                                font-weight: bold;
+                            }
+                        .body{
+                            text-align:center;
+                            word-wrap : break-word ;
+                        }
+                        .info {
+                            text-align:left;
+                            color:#969696;
+                            font-size: 12px;
+                            margin-left: 10px;
+                        }
+                        .contentstyle {
+                            color: #585858;
+                            font-size: 16px;
+                            line-height: 150%;
+                            font-weight:normal;
+                            padding: 0 0 0 0;
+                            text-align:left;
+                        }
+                        
+                        .contentstyle p {
+                            margin: 10px 2% 0px 2%;
+                        }
+                        
+                        em {
+                            font-style: normal;
+                            font-weight: 400;
+                        }
+                        
+                        a {
+                            color: #000000;
+                            text-decoration: none;
+                        }
+                        
+                        img {
+                            border: none;
+                            width:100%;
+                        }
+                        
+                        .imgad{            	
+                            margin-top: 10px;
+                            width:60%;
+                            padding: 3px 0 3px 0;
+                        }
+                        </style>
+                        </head>
+    <body id="body" class="body">
+        <div id="title_pre">
+        	<h1 id="title" class="title"></h1>
+        	<div class="info">        	
+        		<span id="source" ></span>	
+				<span id="time" ></span>
+        	</div>
+        </div>
+        <div id="article_body" class="contentstyle">        	
+        </div>           
+    </body>    
+</html>

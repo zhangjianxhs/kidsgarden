@@ -1,0 +1,28 @@
+﻿{
+	"status":"0",
+	"msg":"获取成功",
+	"data":{
+		"article_id":"21223",
+		"article_title":"安全观",
+		"summary":"文章的摘要",
+		"source":"新华网",
+		"status":"0",
+		"column_id":"1",
+		"url":"http: //www.chinanews.com/gn/2014/05-21/6194679.shtml",
+		"thumbnail_url":"http://image1.chinanews.com.cn/cnsupload/big/2014/05-21/4-426/2f5b81f755f34d81b7cd7723f8a3882f.jpg",
+		"pub_time":"2014-05-2113: 32: 12",
+		"push":"1",
+		"sort":"99",
+		"cover_pic_cnt":"2",
+		"cover_pic_urls":[
+			"http: //f.hiphotos.baidu.com/news/w%3D638/sign=837bfdd2fffaaf5184e382bcb45594ed/18d8bc3eb13533facfebc6daaad3fd1f40345be0.jpg",
+			"http: //e.hiphotos.baidu.com/news/w%3D638/sign=eeb9021df0d3572c66e29fdfb2126352/0b46f21fbe096b63124c0ba40e338744eaf8ace9.jpg"
+		],
+		"content":"XXXXXXXXXXXXXX",
+		"pic_cnt":"2",
+		"pic_urls":[
+			"http://f.hiphotos.baidu.com/news/w%3D638/sign=837bfdd2fffaaf5184e382bcb45594ed/18d8bc3eb13533facfebc6daaad3fd1f40345be0.jpg",
+			"http://e.hiphotos.baidu.com/news/w%3D638/sign=eeb9021df0d3572c66e29fdfb2126352/0b46f21fbe096b63124c0ba40e338744eaf8ace9.jpg"
+		]
+	}
+}

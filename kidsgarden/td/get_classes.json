@@ -1,0 +1,37 @@
+﻿{
+	"status":"0",
+	"msg":"获取成功",
+	"data":{
+		"count":"2",
+		"items":[
+			{
+				"grade_id":"1231",
+				"grade_name":"大班",
+				"classes":[
+					{
+						"class_id":"12311",
+						"class_name":"大班1班"
+					},
+					{
+						"class_id":"12312",
+						"class_name":"大班2班"
+					}
+				]
+			},
+			{
+				"grade_id":"1232",
+				"grade_name":"中班",
+				"classes":[
+					{
+						"class_id":"12321",
+						"class_name":"中班1班"
+					},
+					{
+						"class_id":"12322",
+						"class_name":"中班2班"
+					}
+				]
+			}
+		]
+	}
+}

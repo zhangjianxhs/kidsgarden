@@ -1,0 +1,154 @@
+﻿{
+	"status":"0",
+	"msg":"获取成功",
+	"data":{
+		"count":"13",
+		"items":[
+			{
+				"column_id":"1",
+				"column_name":"动态",
+				"nickname":"园内动态",
+				"show_type":"detail",
+				"location":"top",
+				"auth_type":"0",
+				"cache_type":"1",
+				"show_count_in_row":"1",
+				"update_time":"2014-05-21 13:32:12",
+				"sort":"1"
+			},
+			{
+				"column_id":"2",
+				"column_name":"食谱",
+				"nickname":"宝宝食谱",
+				"show_type":"detail",
+				"location":"top",
+				"auth_type":"0",
+				"cache_type":"0",
+				"show_count_in_row":"2",
+				"update_time":"2014-05-21 13:32:12",
+				"sort":"2"
+			},
+			{
+				"column_id":"3",
+				"column_name":"班级",
+				"nickname":"我的班级",
+				"show_type":"detail",
+				"location":"top",
+				"auth_type":"0",
+				"cache_type":"1",
+				"show_count_in_row":"1",
+				"update_time":"2014-05-21 13:32:12",
+				"sort":"3"
+			},
+			{
+				"column_id":"5",
+				"column_name":"概况",
+				"nickname":"园内概况",
+				"show_type":"title",
+				"location":"top",
+				"auth_type":"0",
+				"cache_type":"0",
+				"show_count_in_row":"2",
+				"update_time":"2014-05-21 13:32:12",
+				"sort":"5"
+			},
+			{
+				"column_id":"6",
+				"column_name":"荣耀",
+				"nickname":"荣耀",
+				"show_type":"detail",
+				"location":"top",
+				"auth_type":"0",
+				"cache_type":"0",
+				"show_count_in_row":"1",
+				"update_time":"2014-05-21 13:32:12",
+				"sort":"6"
+			},
+			{
+				"column_id":"7",
+				"column_name":"教学",
+				"nickname":"教学",
+				"show_type":"detail",
+				"location":"top",
+				"auth_type":"0",
+				"cache_type":"0",
+				"show_count_in_row":"1",
+				"update_time":"2014-05-21 13:32:12",
+				"sort":"7"
+			},
+			{
+				"column_id":"8",
+				"column_name":"保健",
+				"nickname":"保健",
+				"show_type":"detail",
+				"location":"top",
+				"auth_type":"0",
+				"cache_type":"0",
+				"show_count_in_row":"1",
+				"update_time":"2014-05-21 13:32:12",
+				"sort":"8"
+			},
+			{
+				"column_id":"9",
+				"column_name":"文摘",
+				"nickname":"文摘",
+				"show_type":"detail",
+				"location":"top",
+				"auth_type":"0",
+				"cache_type":"0",
+				"show_count_in_row":"1",
+				"update_time":"2014-05-21 13:32:12",
+				"sort":"9"
+			},
+			{
+				"column_id":"10",
+				"column_name":"玩",
+				"nickname":"玩",
+				"show_type":"detail",
+				"location":"left",
+				"auth_type":"0",
+				"cache_type":"1",
+				"show_count_in_row":"1",
+				"update_time":"2014-05-21 13:32:12",
+				"sort":"10"
+			},
+			{
+				"column_id":"11",
+				"column_name":"乐",
+				"nickname":"乐",
+				"show_type":"detail",
+				"location":"left",
+				"auth_type":"0",
+				"cache_type":"1",
+				"show_count_in_row":"1",
+				"update_time":"2014-05-21 13:32:12",
+				"sort":"11"
+			},
+			{
+				"column_id":"12",
+				"column_name":"用",
+				"nickname":"用",
+				"show_type":"detail",
+				"location":"left",
+				"auth_type":"0",
+				"cache_type":"1",
+				"show_count_in_row":"1",
+				"update_time":"2014-05-21 13:32:12",
+				"sort":"12"
+			},
+			{
+				"column_id":"13",
+				"column_name":"吃",
+				"nickname":"吃",
+				"show_type":"detail",
+				"location":"left",
+				"auth_type":"0",
+				"cache_type":"1",
+				"show_count_in_row":"1",
+				"update_time":"2014-05-21 13:32:12",
+				"sort":"13"
+			}			
+		]
+		
+	}
+}

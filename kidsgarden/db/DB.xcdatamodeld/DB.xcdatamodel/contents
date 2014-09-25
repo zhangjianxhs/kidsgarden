@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="14A238x" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="E_Article" representedClassName="E_Article" syncable="YES">
+        <attribute name="a_article_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="a_channel_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="a_content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="a_is_deleted" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="a_is_favor" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="a_is_notification" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="a_is_read" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="a_priority" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="a_pubish_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="a_summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="a_thumbnail_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="a_title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="a_url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="r_channel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="E_Channel" inverseName="r_article" inverseEntity="E_Channel" syncable="YES"/>
+        <relationship name="r_image" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="E_Image" inverseName="r_article" inverseEntity="E_Image" syncable="YES"/>
+    </entity>
+    <entity name="E_Channel" representedClassName="E_Channel" syncable="YES">
+        <attribute name="a_auth_type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="a_cache_type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="a_channel_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="a_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="a_nickname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="a_show_count_in_row" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="a_show_location" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="a_show_type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="a_sort" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="r_article" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="E_Article" inverseName="r_channel" inverseEntity="E_Article" syncable="YES"/>
+    </entity>
+    <entity name="E_Image" representedClassName="E_Image" syncable="YES">
+        <attribute name="a_article_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="a_image_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="a_pushlish_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="a_show_type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="a_url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="r_article" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="E_Article" inverseName="r_image" inverseEntity="E_Article" syncable="YES"/>
+    </entity>
+    <configuration name="Configuration"/>
+    <elements>
+        <element name="E_Article" positionX="72" positionY="-121" width="128" height="270"/>
+        <element name="E_Channel" positionX="-180" positionY="-135" width="135" height="193"/>
+        <element name="E_Image" positionX="306" positionY="-135" width="128" height="133"/>
+    </elements>
+</model>

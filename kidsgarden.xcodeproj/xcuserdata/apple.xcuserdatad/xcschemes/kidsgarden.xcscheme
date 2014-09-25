@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "184174D91918776C00254C55"
-               BuildableName = "kidsgarden.app"
+               BuildableName = "&#x7231;&#xb7;&#x4eb2;&#x5b50;.app"
                BlueprintName = "kidsgarden"
                ReferencedContainer = "container:kidsgarden.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "184174D91918776C00254C55"
-            BuildableName = "kidsgarden.app"
+            BuildableName = "&#x7231;&#xb7;&#x4eb2;&#x5b50;.app"
             BlueprintName = "kidsgarden"
             ReferencedContainer = "container:kidsgarden.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "184174D91918776C00254C55"
-            BuildableName = "kidsgarden.app"
+            BuildableName = "&#x7231;&#xb7;&#x4eb2;&#x5b50;.app"
             BlueprintName = "kidsgarden"
             ReferencedContainer = "container:kidsgarden.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "184174D91918776C00254C55"
-            BuildableName = "kidsgarden.app"
+            BuildableName = "&#x7231;&#xb7;&#x4eb2;&#x5b50;.app"
             BlueprintName = "kidsgarden"
             ReferencedContainer = "container:kidsgarden.xcodeproj">
          </BuildableReference>
