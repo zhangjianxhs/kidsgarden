@@ -34,9 +34,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor=[UIColor blackColor];
+    self.view.backgroundColor=[UIColor whiteColor];
+
+    
     self.title_label=[[UILabel alloc]initWithFrame:CGRectMake(10, 20, self.view.bounds.size.width, 30)];
-    self.title_label.textColor=[UIColor whiteColor];
+    self.title_label.textColor=[UIColor grayColor];
     self.title_label.text=@"蓝天幼儿园";
     self.title_label.font = [UIFont fontWithName:@"Arial" size:20];
     self.title_label.backgroundColor=[UIColor clearColor];
@@ -50,11 +52,14 @@
     self.tableView=[[UITableView alloc] initWithFrame:CGRectMake(0, 80, 300, self.view.bounds.size.height-44)];
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
-    self.tableView.backgroundColor= [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:(51.0/255.0) alpha:1.0];
+    self.tableView.backgroundColor= [UIColor clearColor];
     self.tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
     [self.tableView setScrollEnabled:NO];
     [self.view addSubview:self.tableView];
     [self rebuildUI];
+    UIImageView *pandaView=[[UIImageView alloc] initWithFrame:CGRectMake(5, self.view.frame.size.height-125, 120, 120)];
+    pandaView.image=[UIImage imageNamed:@"panda.jpg"] ;
+    [self.view addSubview:pandaView];
 }
 -(void)rebuildUI{
     [self.leftChannelVCs removeAllObjects];
@@ -101,7 +106,7 @@
     if(row==0){
         cell.textLabel.text=@"首页";
     }
-    cell.textLabel.textColor=[UIColor whiteColor];
+    cell.textLabel.textColor=[UIColor blackColor];
     cell.backgroundColor=[UIColor colorWithWhite:1.0 alpha:0.0];
     return  cell;
 }

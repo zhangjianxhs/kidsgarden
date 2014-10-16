@@ -179,6 +179,8 @@
 		18EF9D3B19629BF500521F59 /* NetStreamStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF9D3A19629BF500521F59 /* NetStreamStatistics.m */; };
 		18EF9D3F19629C3400521F59 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF9D3E19629C3400521F59 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18F56D6419497F18005996D3 /* ItemGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F56D6319497F18005996D3 /* ItemGridViewController.m */; };
+		4773BA2019E567FC00FB6E89 /* panda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4773BA1F19E567FC00FB6E89 /* panda.jpg */; };
+		4773BA2319E56D4400FB6E89 /* KidsBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4773BA2219E56D4400FB6E89 /* KidsBubbleCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -482,6 +484,9 @@
 		18EF9D3E19629C3400521F59 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		18F56D6219497F18005996D3 /* ItemGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemGridViewController.h; path = vcontrollers/ItemGridViewController.h; sourceTree = "<group>"; };
 		18F56D6319497F18005996D3 /* ItemGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemGridViewController.m; path = vcontrollers/ItemGridViewController.m; sourceTree = "<group>"; };
+		4773BA1F19E567FC00FB6E89 /* panda.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panda.jpg; sourceTree = "<group>"; };
+		4773BA2119E56D4400FB6E89 /* KidsBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KidsBubbleCell.h; sourceTree = "<group>"; };
+		4773BA2219E56D4400FB6E89 /* KidsBubbleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KidsBubbleCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -904,6 +909,8 @@
 				188E10331979108300C9D3F4 /* KidsADView.h */,
 				188E10341979108300C9D3F4 /* KidsADView.m */,
 				188E10361979129F00C9D3F4 /* KidsArticleViewDelegate.h */,
+				4773BA2119E56D4400FB6E89 /* KidsBubbleCell.h */,
+				4773BA2219E56D4400FB6E89 /* KidsBubbleCell.m */,
 			);
 			name = view;
 			path = views;
@@ -912,6 +919,7 @@
 		187E19731918D38D00F7677A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				4773BA1F19E567FC00FB6E89 /* panda.jpg */,
 				18401B0319A6CD73001035F8 /* notify_bg.png */,
 				18401B0419A6CD73001035F8 /* notify1.png */,
 				18CF30C919A32CD600F5B501 /* Default@2x.png */,
@@ -1238,6 +1246,7 @@
 				18C0734F1946AD6700DA9EA4 /* article.html in Resources */,
 				187B882B1940579400F60BC5 /* get_article_content.json in Resources */,
 				18A198BC19615B26007D4971 /* HUD_YES.png in Resources */,
+				4773BA2019E567FC00FB6E89 /* panda.jpg in Resources */,
 				1841752C19189E7100254C55 /* icon_rightarrow.png in Resources */,
 				18CF30C819A32C6000F5B501 /* Default-568h@2x.png in Resources */,
 				185E1ECC1965050D00A1E483 /* iVersion.bundle in Resources */,
@@ -1349,6 +1358,7 @@
 				188B2B2F192068A30011035F /* KidsDBOperator.m in Sources */,
 				18C0734C1946AA4F00DA9EA4 /* KidsContentViewController.m in Sources */,
 				18C073561946AF8F00DA9EA4 /* WebViewJavascriptBridge.m in Sources */,
+				4773BA2319E56D4400FB6E89 /* KidsBubbleCell.m in Sources */,
 				181C2A6C1951206200102EB7 /* KidsDetailCell.m in Sources */,
 				187E19761918D4E000F7677A /* KidsDefaultView.m in Sources */,
 				1873E0E11922F35300C2649E /* UIActivityIndicatorView+AFNetworking.m in Sources */,
@@ -1521,7 +1531,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "爱·亲子";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "f82a2e53-44f6-4d8b-8b9e-525583d0fd7a";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALID_ARCHS = "armv7 armv7s armv6";
 				WRAPPER_EXTENSION = app;
@@ -1553,7 +1563,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "爱·亲子";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "f82a2e53-44f6-4d8b-8b9e-525583d0fd7a";
 				VALID_ARCHS = "armv7 armv7s armv6";
 				WRAPPER_EXTENSION = app;
 			};

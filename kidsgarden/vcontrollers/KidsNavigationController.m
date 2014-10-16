@@ -22,11 +22,9 @@
     }
     return self;
 }
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationBar.tintColor=[UIColor whiteColor];
     UIColor *color=[UIColor blackColor];
     NSDictionary *dict=[NSDictionary dictionaryWithObjectsAndKeys: color,UITextAttributeTextColor,[NSValue valueWithUIOffset:UIOffsetMake(0, 0)],UITextAttributeTextShadowOffset,nil];
     self.navigationBar.titleTextAttributes=dict;
